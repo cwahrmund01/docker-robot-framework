@@ -48,6 +48,8 @@ ENV REQUESTS_VERSION 0.9.7
 ENV ROBOT_FRAMEWORK_VERSION 7.1
 ENV SELENIUM_LIBRARY_VERSION 6.6.1
 ENV SSH_LIBRARY_VERSION 3.8.0
+ENV JSON_LIBRARY_VERSION 0.5
+ENV JSON_VALIDATOR_VERSION 2.0.0
 ENV XVFB_VERSION 1.20
 
 # Prepare binaries to be executed
@@ -93,6 +95,8 @@ RUN pip3 install \
   robotframework-requests==${REQUESTS_VERSION} \
   robotframework-seleniumlibrary==${SELENIUM_LIBRARY_VERSION} \
   robotframework-sshlibrary==${SSH_LIBRARY_VERSION} \
+  robotframework-jsonlibrary==${JSON_LIBRARY_VERSION} \
+  robotframework-jsonvalidator==${JSON_VALIDATOR_VERSION} \
   axe-selenium-python==${AXE_SELENIUM_LIBRARY_VERSION}
 
 # Gecko drivers
